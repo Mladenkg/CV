@@ -7,7 +7,12 @@ body{
     padding: 0;
     }
 
-
+.cv{
+    width: 70%;
+    margin: 30px auto;
+    background-color: whitesmoke;
+    border-radius: 8px;
+}
 
 
 
