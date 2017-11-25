@@ -1,4 +1,6 @@
 
+* {box-sizing:border-box}
+
 body{
     font-family: 'PT Sans Narrow', sans-serif;
     background-color: gray;
@@ -7,6 +9,7 @@ body{
     }
 
 .cv{
+    max-width: 1200px;
     width: 70%;
     margin: 30px auto;
     background-color: whitesmoke;
@@ -15,6 +18,10 @@ body{
 section{
     width: 100%;
     border-top: 5px solid cadetblue;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 10px;
 }
 a{
     text-decoration: none;
@@ -34,9 +41,7 @@ h1{
 h2{
     margin: 0px;
 }
-.clear{
-    clear: both;
-}
+
 
 /************************************************
 
@@ -44,40 +49,50 @@ h2{
 
 ************************************************/
 
-.heder{
-    width: 100%;
+heder{
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     
 }
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .image{
-    width: 30%;
+    
     padding: 10px 0px 10px 10px;
-    float: left;
+    
 }
 .image1{
     border-radius: 50%;
 }
-.name{
-    width: 30%;
-    float: left;
+
+.social{
+    display: flex;
+    justify-content: flex-end;
 }
-.contact{
-    width: 30%;
-    float: right;
+
+
 }
-.name h1{
-    padding: 50px 0px 0px 0px;
+.name div{
+    display: flex;
+    align-items: center;
+
 }
 .face, .linkedin{
-    float: right;
-    margin: 10px;
-    margin-top: 40px;
+    
+    margin: 10px 10px ;
+
 }
 .lista{
     list-style: none;
-    display: inline-block;
     padding: 0px;
-    float: right;
-    margin: 100px 10px 0px 0px;
+    margin: 0px 10px 0px 0px;
     text-decoration: none;
     
 }
@@ -90,15 +105,15 @@ h2{
 
 .title{
     width: 30%;
-    float: left;
+    
 }
 .content{
     width: 70%;
-    float: right;
+    
 }
 
 
-* {box-sizing:border-box}
+
 
 /* Container for skill bars */
 .container {
@@ -118,7 +133,7 @@ h2{
 .html {
     width: 80%; 
     background-color: cadetblue;
-    margin: 0;
+    margin:0px;
 }
 .css {
     width: 60%; 
@@ -139,6 +154,7 @@ h2{
 .Off {
     width: 60%; 
     background-color: cadetblue;
+    margin-bottom: 5px;
 }
 
 p{
